@@ -1,4 +1,4 @@
-type IncommingProduct {
+type IncomingProduct {
   gtin: String!
   gln: String!
   target_market: String!
