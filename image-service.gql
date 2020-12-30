@@ -1,5 +1,5 @@
 type IncomingProduct {
-  gtin: String!
+  gtin__: String!
   gln: String!
   target_market: String!
   product_id: ID!
