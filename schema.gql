@@ -1,8 +1,18 @@
+type TypeCode{
+  code: ID!
+}
+
+type InformationProdivder{
+  gln: String!
+}
+
+type ProductIdentifier{
+  externalId: String!
+  targetMarket: TypeCode!
+}
 
 type IncomingImageProduct {
-  gtin: String!
-  gln: String!
-  target_market: String!
-  product_id: ID!
+  productIdentifier: ProductIdentifier!
+  informationProvider: InformationProdivder!
   id: ID!
 }
