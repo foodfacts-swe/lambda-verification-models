@@ -1,9 +1,28 @@
 type TypeCode{
   code: ID!
+  name: String
 }
 
 type InformationProdivder{
   gln: String!
+}
+
+type Allergen {
+  typeCode: TypeCode!
+  containmentCode: TypeCode!
+}
+
+type IngredientInformation{
+  ingredientStatement: String
+}
+
+type AllergenInformation {
+  allergens: [Allergen!]
+  statement: String
+}
+
+type HealthRelated{
+   freeFromCodes: TypeCode
 }
 
 type ProductIdentifier{
@@ -16,3 +35,12 @@ type IncomingImageProduct {
   informationProvider: InformationProdivder!
   id: ID!
 }
+
+
+type IncomingIngredientProduct {
+  id: ID!
+  ingredientInformation: IngredientInformation
+  allergenInformation: AllergenInformation
+}
+
+
