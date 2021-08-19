@@ -35,8 +35,8 @@ type IncomingImageProduct {
   informationProvider: InformationProdivder!
   id: ID!
   name: String
-  modifiedDateAndTime: Date
-  sourceLastChangedDateAndTime: Date
+  modifiedDateAndTime: String
+  sourceLastChangedDateAndTime: String
 }
 
 
@@ -44,8 +44,8 @@ type IncomingIngredientProduct {
   id: ID!
   ingredientInformation: IngredientInformation
   allergenInformation: AllergenInformation
-  modifiedDateAndTime: Date
-  sourceLastChangedDateAndTime: Date
+  modifiedDateAndTime: String
+  sourceLastChangedDateAndTime: String
 }
 
 
