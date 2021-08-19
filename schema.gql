@@ -35,6 +35,8 @@ type IncomingImageProduct {
   informationProvider: InformationProdivder!
   id: ID!
   name: String!
+  modifiedDateAndTime: Date!
+  sourceLastChangedDateAndTime: Date
 }
 
 
