@@ -41,6 +41,7 @@ type IncomingIngredientProduct {
   id: ID!
   ingredientInformation: IngredientInformation
   allergenInformation: AllergenInformation
+  modifiedDateAndTime: Date!
 }
 
 
